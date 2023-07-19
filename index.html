@@ -11,18 +11,86 @@
 </head>
 <body>
     <form action="#" class="form">
+        <!-- Form 1  -->
         <h1 class="text-center">Registration Form</h1>
-       <div class="from-step form-step-active">
+
+        <!-- progress  Bar -->
+        <div class="progressbar">
+            
+            <div class="progress" id="progress"></div>
+
+            <div class="progress-step Progress-step-active" data-title="Intro"></div>
+            <div class="progress-step" data-title="Contact"></div>
+            <div class="progress-step" data-title="ID"></div>
+            <div class="progress-step" data-title="Password"></div>
+        </div>
+
+
+        <!-- steps -->
+       <div class="form-step form-step-active">
          <div class="input-group">
-            <label for="">Username</label>
+            <label for="username">Username</label>
             <input type="text" name="username" id="username">
          </div>
          <div class="input-group">
             <label for="position">Position</label>
             <input type="text" name="position" id="position">
          </div>
-         <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+         <div class="">
+             <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+         </div>
        </div>
+
+       <!-- Form 2 -->
+       <div class="form-step">
+         <div class="input-group">
+            <label for="Phone">Phone</label>
+            <input type="text" name="Phone" id="Phone">
+         </div>
+         <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+         </div>
+         <div class="btn-group">
+             <a href="#" class="btn btn-prev ">Previous</a>
+             <a href="#" class="btn btn-next ">Next</a>
+         </div>
+       </div>
+
+       <!-- Form 3 -->
+
+       <div class="form-step">
+        <div class="input-group">
+           <label for="dob">Date of Birth</label>
+           <input type="date" name="dob" id="dob">
+        </div>
+        <div class="input-group">
+           <label for="ID">Goverment ID</label>
+           <input type="number" name="ID" id="ID">
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn btn-prev ">Previous</a>
+            <a href="#" class="btn btn-next ">Next</a>
+        </div>
+      </div>
+
+      <!-- Form 4 -->
+
+       <div class="form-step">
+        <div class="input-group">
+           <label for="password">Password</label>
+           <input type="password" name="password" id="password">
+        </div>
+        <div class="input-group">
+           <label for="confirmPassword">Confirm Password</label>
+           <input type="password" name="confirmPassword" id="confirmPassword">
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn btn-prev ">Previous</a>
+            <input type="submit" value="Submit" class="btn">
+        </div>
+      </div>
+
     </form>
 
     <script src="./Script.js"></script>
